@@ -10,16 +10,16 @@ import MainCard from './../../../ui-component/cards/MainCard';
 // style constant
 const useStyles = makeStyles((theme) => ({
     card: {
-        maxWidth: '475px',
-        '& > *': {
-            flexGrow: 1,
-            flexBasis: '50%'
-        },
         [theme.breakpoints.down('sm')]: {
             margin: '20px'
         },
         [theme.breakpoints.down('lg')]: {
             maxWidth: '400px'
+        },
+        maxWidth: '475px',
+        '& > *': {
+            flexGrow: 1,
+            flexBasis: '50%'
         }
     },
     content: {

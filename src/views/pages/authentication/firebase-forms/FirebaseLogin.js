@@ -15,7 +15,7 @@ import {
     Grid,
     IconButton,
     InputAdornment,
-    InputLabel,
+    // InputLabel,
     OutlinedInput,
     Stack,
     Typography
@@ -37,6 +37,14 @@ import Google from './../../../../assets/images/icons/social-google.svg';
 
 // style constant
 const useStyles = makeStyles((theme) => ({
+    signText: {
+        cursor: 'unset',
+        margin: theme.spacing(2),
+        padding: '5px 56px',
+        borderColor: theme.palette.grey[100] + ' !important',
+        color: theme.palette.grey[900] + '!important',
+        fontWeight: 500
+    },
     redButton: {
         fontSize: '1rem',
         fontWeight: 500,
@@ -55,14 +63,7 @@ const useStyles = makeStyles((theme) => ({
     signDivider: {
         flexGrow: 1
     },
-    signText: {
-        cursor: 'unset',
-        margin: theme.spacing(2),
-        padding: '5px 56px',
-        borderColor: theme.palette.grey[100] + ' !important',
-        color: theme.palette.grey[900] + '!important',
-        fontWeight: 500
-    },
+
     loginIcon: {
         marginRight: '16px',
         [theme.breakpoints.down('sm')]: {
@@ -112,6 +113,28 @@ const FirebaseLogin = (props, { ...others }) => {
                             <img src={Google} alt="google" width="20px" className={classes.loginIcon} /> Sign in with Google
                         </Button>
                     </AnimateButton>
+                </Grid>
+                <Grid item xs={12}>
+                    <Box
+                        sx={{
+                            alignItems: 'center',
+                            display: 'flex'
+                        }}
+                    >
+                        <Divider className={classes.signDivider} orientation="horizontal" />
+                        <AnimateButton>
+                            <Button
+                                variant="outlined"
+                                className={classes.signText}
+                                sx={{ borderRadius: customization.borderRadius + 'px' }}
+                                disableRipple
+                                disabled
+                            >
+                                OR
+                            </Button>
+                        </AnimateButton>
+                        <Divider className={classes.signDivider} orientation="horizontal" />
+                    </Box>
                 </Grid>
                 <Grid item xs={12}>
                     <Box

@@ -23,7 +23,7 @@ const LoginRoutes = () => {
                     <NavMotion>
                         <GuestGuard>
                             <Route path="/login" component={AuthLogin} />
-                            <Route path="/register" component={AuthRegister} />
+                            {/* <Route path="/register" component={AuthRegister} /> */}
                         </GuestGuard>
                     </NavMotion>
                 </Switch>
