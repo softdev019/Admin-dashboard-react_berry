@@ -83,18 +83,19 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 500,
         color: theme.palette.secondary[200]
     },
-    avatarCircle: {
-        cursor: 'pointer',
-        ...theme.typography.smallAvatar,
-        backgroundColor: theme.palette.secondary[200],
-        color: theme.palette.secondary.dark
-    },
+
     circleIcon: {
         transform: 'rotate3d(1, 1, 1, 45deg)'
     },
     menuItem: {
         marginRight: '14px',
         fontSize: '1.25rem'
+    },
+    avatarCircle: {
+        cursor: 'pointer',
+        ...theme.typography.smallAvatar,
+        backgroundColor: theme.palette.secondary[200],
+        color: theme.palette.secondary.dark
     }
 }));
 
