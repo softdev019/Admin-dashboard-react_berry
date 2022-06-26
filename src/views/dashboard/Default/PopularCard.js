@@ -32,14 +32,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '12px',
         marginBottom: '12px'
     },
-    avatarSuccess: {
-        width: '16px',
-        height: '16px',
-        borderRadius: '5px',
-        backgroundColor: theme.palette.success.light,
-        color: theme.palette.success.dark,
-        marginLeft: '15px'
-    },
+
     successDark: {
         color: theme.palette.success.dark
     },
@@ -53,6 +46,14 @@ const useStyles = makeStyles((theme) => ({
     },
     errorDark: {
         color: theme.palette.orange.dark
+    },
+    avatarSuccess: {
+        width: '16px',
+        height: '16px',
+        borderRadius: '5px',
+        backgroundColor: theme.palette.success.light,
+        color: theme.palette.success.dark,
+        marginLeft: '15px'
     }
 }));
 

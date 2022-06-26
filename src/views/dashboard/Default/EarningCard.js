@@ -38,22 +38,22 @@ const useStyles = makeStyles((theme) => ({
                 top: '-105px',
                 right: '-140px'
             }
-        },
-        '&:before': {
-            content: '""',
-            position: 'absolute',
-            width: '210px',
-            height: '210px',
-            background: theme.palette.secondary[800],
-            borderRadius: '50%',
-            top: '-125px',
-            right: '-15px',
-            opacity: 0.5,
-            [theme.breakpoints.down('xs')]: {
-                top: '-155px',
-                right: '-70px'
-            }
         }
+        // '&:before': {
+        //     content: '""',
+        //     position: 'absolute',
+        //     width: '210px',
+        //     height: '210px',
+        //     background: theme.palette.secondary[800],
+        //     borderRadius: '50%',
+        //     top: '-125px',
+        //     right: '-15px',
+        //     opacity: 0.5,
+        //     [theme.breakpoints.down('xs')]: {
+        //         top: '-155px',
+        //         right: '-70px'
+        //     }
+        // }
     },
     content: {
         padding: '20px !important'
@@ -71,13 +71,13 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.secondary[200],
         zIndex: 1
     },
-    cardHeading: {
-        fontSize: '2.125rem',
-        fontWeight: 500,
-        marginRight: '8px',
-        marginTop: '14px',
-        marginBottom: '6px'
-    },
+    // cardHeading: {
+    //     fontSize: '2.125rem',
+    //     fontWeight: 500,
+    //     marginRight: '8px',
+    //     marginTop: '14px',
+    //     marginBottom: '6px'
+    // },
     subHeading: {
         fontSize: '1rem',
         fontWeight: 500,

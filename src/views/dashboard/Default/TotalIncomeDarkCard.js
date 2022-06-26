@@ -43,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
     content: {
         padding: '16px !important'
     },
+    secondary: {
+        color: theme.palette.primary.light,
+        marginTop: '5px'
+    },
     avatar: {
         ...theme.typography.commonAvatar,
         ...theme.typography.largeAvatar,
@@ -52,10 +56,7 @@ const useStyles = makeStyles((theme) => ({
     primary: {
         color: '#fff'
     },
-    secondary: {
-        color: theme.palette.primary.light,
-        marginTop: '5px'
-    },
+
     padding: {
         paddingTop: 0,
         paddingBottom: 0
