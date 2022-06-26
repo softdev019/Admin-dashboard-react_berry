@@ -36,14 +36,6 @@ const useStyles = makeStyles((theme) => ({
     successDark: {
         color: theme.palette.success.dark
     },
-    avatarError: {
-        width: '16px',
-        height: '16px',
-        borderRadius: '5px',
-        backgroundColor: theme.palette.orange.light,
-        color: theme.palette.orange.dark,
-        marginLeft: '15px'
-    },
     avatarSuccess: {
         width: '16px',
         height: '16px',
@@ -52,6 +44,15 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.success.dark,
         marginLeft: '15px'
     },
+    avatarError: {
+        width: '16px',
+        height: '16px',
+        borderRadius: '5px',
+        backgroundColor: theme.palette.orange.light,
+        color: theme.palette.orange.dark,
+        marginLeft: '15px'
+    },
+
     errorDark: {
         color: theme.palette.orange.dark
     }
