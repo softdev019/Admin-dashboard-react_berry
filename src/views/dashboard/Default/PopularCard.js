@@ -44,9 +44,6 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.orange.dark,
         marginLeft: '15px'
     },
-    errorDark: {
-        color: theme.palette.orange.dark
-    },
     avatarSuccess: {
         width: '16px',
         height: '16px',
@@ -54,6 +51,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.success.light,
         color: theme.palette.success.dark,
         marginLeft: '15px'
+    },
+    errorDark: {
+        color: theme.palette.orange.dark
     }
 }));
 
