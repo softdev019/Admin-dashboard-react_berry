@@ -1,11 +1,10 @@
-//-----------------------|| DASHBOARD - BAJAJ AREA CHART ||-----------------------//
+//-----------------------|| DASHBOARD - TOTAL ORDER MONTH CHART ||-----------------------//
 
 const chartData = {
-    type: 'area',
-    height: 95,
+    type: 'line',
+    height: 90,
     options: {
         chart: {
-            id: 'support-chart',
             sparkline: {
                 enabled: true
             }
@@ -13,7 +12,21 @@ const chartData = {
         dataLabels: {
             enabled: false
         },
+        colors: ['#fff'],
+        fill: {
+            type: 'solid',
+            opacity: 1
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 3
+        },
+        yaxis: {
+            min: 0,
+            max: 100
+        },
         tooltip: {
+            theme: 'dark',
             fixed: {
                 enabled: false
             },
@@ -22,21 +35,18 @@ const chartData = {
             },
             y: {
                 title: {
-                    formatter: (seriesName) => 'Ticket '
+                    formatter: (seriesName) => 'Total Order'
                 }
             },
             marker: {
                 show: false
             }
-        },
-        stroke: {
-            curve: 'smooth',
-            width: 1
         }
     },
     series: [
         {
-            data: [0, 15, 10, 50, 30, 40, 25]
+            name: 'series1',
+            data: [45, 66, 41, 89, 25, 44, 9, 54]
         }
     ]
 };
