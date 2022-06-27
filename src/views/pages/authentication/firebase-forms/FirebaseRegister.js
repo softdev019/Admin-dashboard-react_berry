@@ -281,8 +281,8 @@ const FirebaseRegister = ({ ...others }) => {
                                 id="outlined-adornment-password-register"
                                 type={showPassword ? 'text' : 'password'}
                                 value={values.password}
-                                name="password"
-                                label="Password"
+                                // name="password"
+                                // label="Password"
                                 onBlur={handleBlur}
                                 onChange={(e) => {
                                     handleChange(e);
