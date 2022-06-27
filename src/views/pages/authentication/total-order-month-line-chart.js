@@ -21,10 +21,10 @@ const chartData = {
         //     curve: 'smooth',
         //     width: 3
         // },
-        yaxis: {
-            min: 0,
-            max: 100
-        },
+        // yaxis: {
+        //     min: 0,
+        //     max: 100
+        // },
         tooltip: {
             theme: 'dark',
             fixed: {

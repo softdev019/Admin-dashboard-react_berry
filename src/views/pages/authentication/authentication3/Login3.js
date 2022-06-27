@@ -12,6 +12,49 @@ import FirebaseLogin from './../firebase-forms/FirebaseLogin';
 import Logo from './../../../../ui-component/Logo';
 import AuthFooter from './../../../../ui-component/cards/AuthFooter';
 
+const useStyles = makeStyles((theme) => ({
+    card: {
+        overflow: 'hidden',
+        position: 'relative',
+        '&:after': {
+            content: '""',
+            position: 'absolute',
+            width: '210px',
+            height: '210px',
+            background: 'linear-gradient(210.04deg, ' + theme.palette.warning.dark + ' -50.94%, rgba(144, 202, 249, 0) 83.49%)',
+            borderRadius: '50%',
+            top: '-30px',
+            right: '-180px'
+        },
+        '&:before': {
+            content: '""',
+            position: 'absolute',
+            width: '210px',
+            height: '210px',
+            background: 'linear-gradient(140.9deg, ' + theme.palette.warning.dark + ' -14.02%, rgba(144, 202, 249, 0) 70.50%)',
+            borderRadius: '50%',
+            top: '-160px',
+            right: '-130px'
+        }
+    },
+    content: {
+        padding: '16px !important'
+    },
+    avatar: {
+        ...theme.typography.commonAvatar,
+        ...theme.typography.largeAvatar,
+        backgroundColor: theme.palette.warning.light,
+        color: theme.palette.warning.dark
+    },
+    secondary: {
+        color: theme.palette.grey[500],
+        marginTop: '5px'
+    },
+    padding: {
+        paddingTop: 0,
+        paddingBottom: 0
+    }
+}));
 // assets
 
 //================================|| AUTH3 - LOGIN ||================================//

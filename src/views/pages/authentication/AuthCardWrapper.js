@@ -9,19 +9,19 @@ import MainCard from './../../../ui-component/cards/MainCard';
 
 // style constant
 const useStyles = makeStyles((theme) => ({
-    // card: {
-    //     [theme.breakpoints.down('sm')]: {
-    //         margin: '20px'
-    //     },
-    //     [theme.breakpoints.down('lg')]: {
-    //         maxWidth: '400px'
-    //     },
-    //     maxWidth: '475px',
-    //     '& > *': {
-    //         flexGrow: 1,
-    //         flexBasis: '50%'
-    //     }
-    // },
+    card: {
+        [theme.breakpoints.down('sm')]: {
+            margin: '20px'
+        },
+        [theme.breakpoints.down('lg')]: {
+            maxWidth: '400px'
+        },
+        maxWidth: '475px',
+        '& > *': {
+            flexGrow: 1,
+            flexBasis: '50%'
+        }
+    },
     content: {
         padding: theme.spacing(5) + ' !important',
         [theme.breakpoints.down('lg')]: {
