@@ -75,7 +75,7 @@ const TotalIncomeLightCard = ({ isLoading }) => {
                                     <StorefrontTwoToneIcon fontSize="inherit" />
                                 </Avatar>
                             </ListItemAvatar>
-                            <ListItemText
+                            {/* <ListItemText
                                 sx={{
                                     mt: 0.45,
                                     mb: 0.45
@@ -87,7 +87,7 @@ const TotalIncomeLightCard = ({ isLoading }) => {
                                         Total Income
                                     </Typography>
                                 }
-                            />
+                            /> */}
                         </ListItem>
                     </List>
                 </MainCard>

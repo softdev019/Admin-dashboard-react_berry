@@ -4,11 +4,11 @@ const chartData = {
     type: 'line',
     height: 90,
     options: {
-        chart: {
-            sparkline: {
-                enabled: true
-            }
-        },
+        // chart: {
+        //     sparkline: {
+        //         enabled: true
+        //     }
+        // },
         dataLabels: {
             enabled: false
         },
