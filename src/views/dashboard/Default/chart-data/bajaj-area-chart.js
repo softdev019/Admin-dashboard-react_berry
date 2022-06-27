@@ -13,10 +13,6 @@ const chartData = {
         dataLabels: {
             enabled: false
         },
-        stroke: {
-            curve: 'smooth',
-            width: 1
-        },
         tooltip: {
             fixed: {
                 enabled: false
@@ -32,6 +28,10 @@ const chartData = {
             marker: {
                 show: false
             }
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 1
         }
     },
     series: [

@@ -40,6 +40,12 @@ const useStyles = makeStyles((theme) => ({
             right: '-130px'
         }
     },
+    avatar: {
+        ...theme.typography.commonAvatar,
+        ...theme.typography.largeAvatar,
+        backgroundColor: theme.palette.primary[800],
+        color: '#fff'
+    },
     content: {
         padding: '16px !important'
     },
@@ -47,12 +53,7 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.primary.light,
         marginTop: '5px'
     },
-    avatar: {
-        ...theme.typography.commonAvatar,
-        ...theme.typography.largeAvatar,
-        backgroundColor: theme.palette.primary[800],
-        color: '#fff'
-    },
+
     primary: {
         color: '#fff'
     },

@@ -275,6 +275,55 @@ const FirebaseRegister = ({ ...others }) => {
                             )}
                         </FormControl>
 
+                        <FormControl fullWidth error={Boolean(touched.password && errors.password)} className={classes.loginInput}>
+                            <InputLabel htmlFor="outlined-adornment-password-register">Password</InputLabel>
+                            <OutlinedInput
+                                id="outlined-adornment-password-register"
+                                type={showPassword ? 'text' : 'password'}
+                                value={values.password}
+                                name="password"
+                                label="Password"
+                                onBlur={handleBlur}
+                                onChange={(e) => {
+                                    handleChange(e);
+                                    changePassword(e.target.value);
+                                }}
+                                endAdornment={
+                                    <InputAdornment position="end">
+                                        <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowPassword}
+                                            onMouseDown={handleMouseDownPassword}
+                                            edge="end"
+                                        >
+                                            {showPassword ? <Visibility /> : <VisibilityOff />}
+                                        </IconButton>
+                                    </InputAdornment>
+                                      <InputAdornment position="end">
+                                        <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowPassword}
+                                            onMouseDown={handleMouseDownPassword}
+                                            edge="end"
+                                        >
+                                            {showPassword ? <Visibility /> : <VisibilityOff />}
+                                        </IconButton>
+                                    </InputAdornment>
+                                }
+                                inputProps={{
+                                    classes: {
+                                        notchedOutline: classes.notchedOutline
+                                    }
+                                }}
+                            />
+                            {touched.password && errors.password && (
+                                <FormHelperText error id="standard-weight-helper-text-password-register">
+                                    {' '}
+                                    {errors.password}{' '}
+                                </FormHelperText>
+                            )}
+                        </FormControl>
+
                         {strength !== 0 && (
                             <FormControl fullWidth>
                                 <Box
