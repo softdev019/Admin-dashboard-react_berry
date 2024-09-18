@@ -289,6 +289,7 @@ const FirebaseRegister = ({ ...others }) => {
                                     changePassword(e.target.value);
                                 }}
                                 endAdornment={
+                                    <>
                                     <InputAdornment position="end">
                                         <IconButton
                                             aria-label="toggle password visibility"
@@ -309,6 +310,7 @@ const FirebaseRegister = ({ ...others }) => {
                                             {showPassword ? <Visibility /> : <VisibilityOff />}
                                         </IconButton>
                                     </InputAdornment>
+                                    </>
                                 }
                                 inputProps={{
                                     classes: {
